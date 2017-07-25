@@ -34,6 +34,8 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.actionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.consulterSéminaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consulterEmployéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,15 +64,20 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem2.Text = "login";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem3.Text = "quitter";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // actionToolStripMenuItem
             // 
+            this.actionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consulterSéminaireToolStripMenuItem,
+            this.consulterEmployéToolStripMenuItem});
             this.actionToolStripMenuItem.Name = "actionToolStripMenuItem";
             this.actionToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.actionToolStripMenuItem.Text = "Action";
@@ -83,6 +90,18 @@
             this.label1.Size = new System.Drawing.Size(194, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Gestion des employés et des séminaires";
+            // 
+            // consulterSéminaireToolStripMenuItem
+            // 
+            this.consulterSéminaireToolStripMenuItem.Name = "consulterSéminaireToolStripMenuItem";
+            this.consulterSéminaireToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.consulterSéminaireToolStripMenuItem.Text = "Consulter séminaire ";
+            // 
+            // consulterEmployéToolStripMenuItem
+            // 
+            this.consulterEmployéToolStripMenuItem.Name = "consulterEmployéToolStripMenuItem";
+            this.consulterEmployéToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.consulterEmployéToolStripMenuItem.Text = "Consulter employé";
             // 
             // Form1
             // 
@@ -109,6 +128,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem actionToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem consulterSéminaireToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consulterEmployéToolStripMenuItem;
     }
 }
 

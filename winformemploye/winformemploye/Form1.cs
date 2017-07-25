@@ -16,5 +16,15 @@ namespace winformemploye
         {
             InitializeComponent();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            (new connection()).ShowDialog();
+        }
     }
 }
