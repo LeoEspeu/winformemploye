@@ -17,5 +17,17 @@ namespace winformemploye
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string cnx ="Data Source=slam;User Id="+textBox1.Text+"; Password="+textBox2.Text+"";
+                MessageBox.Show("Vous êtes connectés à la base de donnée.");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erreur de connexion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
