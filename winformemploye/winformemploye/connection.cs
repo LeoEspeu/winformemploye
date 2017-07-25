@@ -27,9 +27,13 @@ namespace winformemploye
                 oracleCnx = new OracleConnection(cnx);
                 oracleCnx.Open();
                 MessageBox.Show("Vous êtes connectés à la base de donnée.");
-
+                oracleCnx.Close();
+            Form1 frm1 = new Form1();
+            frm1.Owner = this;
+            frm1.actionToolStripMenuItem.Enabled = true;
+            frm1.ShowDialog();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erreur de connexion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
