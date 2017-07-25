@@ -26,5 +26,15 @@ namespace winformemploye
         {
             (new connection()).ShowDialog();
         }
+
+        private void consulterSéminaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consulterEmployéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
